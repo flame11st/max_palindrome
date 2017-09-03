@@ -1,3 +1,4 @@
+#check on the palindrome
 def is_pal(pal):
     half_len = int(len(pal) / 2.0)
     if len(pal) % 2 == 0:
