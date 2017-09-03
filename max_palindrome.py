@@ -18,3 +18,18 @@ def primes(x, y):
             if i == z-1: arr.append(z)
             i += 1
     return arr
+
+
+#multiple prime numbers and return palindromes
+def res_pal(primes):
+    pal = {}
+    pal_only = []
+    for i in range(len(primes)-1):
+        z = i
+        while z < len(primes)-1:
+            x = primes[i] * primes[z + 1]
+            if is_pal(str(x)):
+                pal[x] = [primes[i], primes[z + 1]]
+                pal_only.append(x)
+            z += 1
+    return pal,pal_only
