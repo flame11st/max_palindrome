@@ -47,4 +47,8 @@ def max_pal(x,y):
 
 
 while True:
+    try:
         max_pal(int(input("Take numbers from: ")),int(input("Take numbers to: ")))
+    except:
+        ValueError
+        print("no one palindrome found")
