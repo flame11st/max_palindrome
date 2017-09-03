@@ -44,3 +44,7 @@ def max_pal(x,y):
     mult2 = pal[0][res][1]
     print("Max palindrome is : %d" % res)
     print("Multipliers: %d , %d" % (mult1, mult2))
+
+
+while True:
+        max_pal(int(input("Take numbers from: ")),int(input("Take numbers to: ")))
