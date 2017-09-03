@@ -33,3 +33,14 @@ def res_pal(primes):
                 pal_only.append(x)
             z += 1
     return pal,pal_only
+
+
+#print max palindrome and multipliers
+def max_pal(x,y):
+    pr = primes(x, y)
+    pal = res_pal(pr)
+    res = max(pal[1])
+    mult1 = pal[0][res][0]
+    mult2 = pal[0][res][1]
+    print("Max palindrome is : %d" % res)
+    print("Multipliers: %d , %d" % (mult1, mult2))
